@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TODO APP"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-light" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text"
+        android:hint="Add an item"
+        android:layout_below="@+id/text_view"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/edit_text"
+        android:id="@+id/linear_layout1"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:text="Add"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete"
+            android:text="Delete"
+            android:layout_weight="0.33"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear"
+            android:text="Clear"
+            android:layout_weight="0.33"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view1"
+        android:layout_below="@+id/linear_layout1"
+        android:text="My To Do List"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_view"
+        android:layout_below="@+id/text_view1"
+        android:padding="10dp"
+        android:choiceMode="multipleChoice"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view2"
+        android:layout_below="@+id/text_view1"
+        android:text="No task for today!! Enjoy"
+        android:textColor="@color/black"
+        android:padding="100dp"
+        android:textSize="10dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:visibility="visible"/>
+
+
+
+</RelativeLayout>
